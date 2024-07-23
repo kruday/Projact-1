@@ -884,7 +884,7 @@ transform-origin: 50%;
 .slider-section {
 	float: left;
 	width: 100%;
-	margin-top: -1px;
+	margin-top: 87px !important;
 }
 /* .home-slide-overlay {
     position: absolute;
