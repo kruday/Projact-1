@@ -497,9 +497,25 @@ fieldset {
 
 /* logo area */
 
+.logo{
+	width:300px;
+	object-fit: contain;
+
+}
+.logo img{
+	width:100%;
+	height: 100%;
+}
+
+
 .logo-area {
 	padding: 10px 0;
+	
 	/* background-color: #FBFBFB; */
+	/* display: flex;
+            justify-content: space-between;
+			 Distribute space between items
+            */
 }
 
 .logo-area .header-info-box {
@@ -528,7 +544,7 @@ fieldset {
     color: #666;
 } 
 .logo-area .header-info-box:last-child {
-    padding-left: 12px;
+    /* padding-left: 12px; */
     border: none;
 }
 .logo-area .navbar-form {
