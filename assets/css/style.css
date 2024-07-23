@@ -510,8 +510,9 @@ fieldset {
 
 .logo-area {
 	padding: 6px 0;
+
 	
-	/* background-color: #FBFBFB; */
+	background-color:  rgba(3, 3, 97, 0.914) !important;
 	/* display: flex;
             justify-content: space-between;
 			 Distribute space between items
