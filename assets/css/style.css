@@ -421,7 +421,8 @@ fieldset {
 
 /* top area */
 .top-area {
-  background: rgba(3, 3, 97, 0.914);
+
+  background: #030361;
   color:#fff;
 }
 .top-area p {
@@ -512,7 +513,7 @@ fieldset {
 	padding: 6px 0;
 
 	
-	background-color:  rgba(3, 3, 97, 0.914) !important;
+	/* background-color:  rgba(3, 3, 97, 0.914) !important; */
 	/* display: flex;
             justify-content: space-between;
 			 Distribute space between items
