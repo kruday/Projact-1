@@ -29,6 +29,36 @@ Table Of Contents end
 ================================================
 */
 
+// let slideIndex = 0;
+// let slides = document.getElementsByClassName("owl-carousel");
+// let slideInterval;
+
+// function showSlides() {
+//     for (let i = 0; i < slides.length; i++) {
+//         slides[i].classList.remove("showing");
+//     }
+//     slideIndex++;
+//     if (slideIndex > slides.length) {slideIndex = 1}    
+//     slides[slideIndex-1].classList.add("showing");
+//     slideInterval = setTimeout(showSlides, 3000); // Change image every 3 seconds
+// }
+
+// function pauseSlides() {
+//     clearTimeout(slideInterval);
+// }
+
+// function resumeSlides() {
+//     slideInterval = setTimeout(showSlides, 3000);
+// }
+
+// document.querySelector('.slider-section').addEventListener('mouseover', pauseSlides);
+// document.querySelector('.slider-section').addEventListener('mouseout', resumeSlides);
+
+// showSlides();
+
+
+
+
 (function($) {
     'use strict';
 
