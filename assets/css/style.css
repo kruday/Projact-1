@@ -423,7 +423,9 @@ fieldset {
 .top-area {
 
   /* background: #030361; */
-  color:#fff;
+  background: white;
+
+  /* color:#fff; */
 }
 .top-area p {
 	color: #666;
@@ -453,8 +455,14 @@ fieldset {
   color: #fff;
   padding: 11px;
 }
+
+.mylist{
+	font-weight: bold;
+	color: red   !important ;
+}
 .mylist:hover{
-	color: orange !important;
+
+	color: blue !important;
 }
 .header-social ul li a:hover {
   background-color: orange;
