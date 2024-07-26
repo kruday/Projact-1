@@ -433,6 +433,7 @@ Version      : 1.0
 .main-header .top-area .info-menu {
 	float: none;
 	text-align: center;
+	display: none;
 }
 }
 /* Wide Mobile Layout: 480px. */
