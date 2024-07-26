@@ -913,12 +913,13 @@ transform-origin: 50%;
 	color:orange !important;
 }
 .home-single-slide {
+	margin-top: 20px;
     background-size: cover;
     background-position: center center;
     color: #fff;
     position: relative;
-    display: table;
-    height: 600px;
+    /* display: table; */
+    height: 90vh;
     width: 100%;
 }
 .home-single-slide-inner {
@@ -5112,20 +5113,23 @@ td.img-row {
 /* container width small device */
 @media only screen and (max-width: 480px) {
 .container,.auto-container,.home-single-slide {
-	width: 90%;
+	width: 100%;
 }
+.home-single-slide{
+	height: 45vh;
+	background-size: contain !important;
+	background-position: right !important;
+	background-repeat: no-repeat !important;
+  }
 }
 @media only screen and (max-width: 360px) {
 .container,.auto-container,.home-single-slide {
-	width: 90%;
+	width: 100%;
 }
 }
 
 @media only screen and (max-width: 360px) {
 	.home-single-slide {
-		width: 90%;
-		background-size: cover;
-		background-position: center;
-		background-repeat: no-repeat;
+		width: 100%;
 	}
 	}
