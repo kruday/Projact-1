@@ -455,16 +455,16 @@ fieldset {
 .header-social ul li a {
   font-size: 16px;
   color: #fff;
-  padding: 11px;
+  padding: 11px;   
 }
 
 .mylist{
 	font-weight: bold;
-	color: red   !important ;
+	color: #e22124   !important ;
 }
 .mylist:hover{
 
-	color: blue !important;
+	color: #035fa8 !important;
 }
 .header-social ul li a:hover {
   background-color: orange;
@@ -5094,6 +5094,10 @@ td.img-row {
 }
 .cart-bottom span, .cart-bottom p {
 	font-weight: 600;
+}
+
+.footer-section-title.h5{
+	color: red;
 }
 
 /*
