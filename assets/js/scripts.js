@@ -157,6 +157,7 @@
             loop: true,
             autoplay: true,
             autoplayTimeout: 3500,
+          
 			animateIn: "fadeInLeft",
 			animateOut: "fadeOutRight",
             dots: true,
@@ -221,30 +222,21 @@
         $('.service-slider').owlCarousel({
             loop: true,
             margin: 30,
-            autoplay: true,
-            autoplayTimeout: 4000,
-			navSpeed: 700,
-			dotsSpeed: 700,
-			dragEndSpeed: 1000,
-            dots: false,
             nav: true,
-            navText: ["<i class='icofont icofont-thin-left'></i>", "<i class='icofont icofont-thin-right'></i>"],
-			responsiveClass:true,
-			responsive:{
-				0:{
-					items:1
-				},
-				600:{
-					items:1
-				},
-				768:{
-					items:2
-				},
-				1000:{
-					items:4
-				}
-			}
-        });
+            autoplay: true,
+            autoplayTimeout: 3000,
+            responsive: {
+              0: {
+                items: 1
+              },
+              600: {
+                items: 3
+              },
+              1000: {
+                items: 4
+              }
+            }
+          });
 				
 
         /* 11. TEAM SLIDER JS */
