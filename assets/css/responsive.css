@@ -445,3 +445,9 @@ Version      : 1.0
 
 
 }
+
+@media only screen and (max-width: 1000px) {
+    .main-header .top-area .info-menu {
+       display: none !important;
+    }
+}

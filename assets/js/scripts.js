@@ -1,64 +1,3 @@
-/*
-Author       : Tech Trek.
-Template Name: Cleveland - Responsive Health And Medical Html Template
-Version      : 1.0
-*/
-/*=============================================
-TABLE OF CONTENTS
-================================================
-1. PRELOADER JS
-2. JQUERY STICKY MENU
-3. MENU JS
-4. SECTIONS BACKGROUNDS
-5. COUNTDOWN JS
-6. HOME SLIDER JS
-7. BLOG SLIDER JS
-8. ABOUT SLIDER JS
-9. PORTFOLIO SLIDER JS
-10. SERVICE SLIDER JS
-11. TEAM SLIDER JS
-12. CLIENT SLIDER JS
-13. WN SLIDER JS
-14. VENOBOX JS
-15. ACCORDION JS
-16. DATEPICKER JS
-17. WOW ANIMATION JS
-18. MIXITUP JS
-
-Table Of Contents end
-================================================
-*/
-
-// let slideIndex = 0;
-// let slides = document.getElementsByClassName("owl-carousel");
-// let slideInterval;
-
-// function showSlides() {
-//     for (let i = 0; i < slides.length; i++) {
-//         slides[i].classList.remove("showing");
-//     }
-//     slideIndex++;
-//     if (slideIndex > slides.length) {slideIndex = 1}    
-//     slides[slideIndex-1].classList.add("showing");
-//     slideInterval = setTimeout(showSlides, 3000); // Change image every 3 seconds
-// }
-
-// function pauseSlides() {
-//     clearTimeout(slideInterval);
-// }
-
-// function resumeSlides() {
-//     slideInterval = setTimeout(showSlides, 3000);
-// }
-
-// document.querySelector('.slider-section').addEventListener('mouseover', pauseSlides);
-// document.querySelector('.slider-section').addEventListener('mouseout', resumeSlides);
-
-// showSlides();
-
-
-
-
 (function($) {
     'use strict';
 
@@ -168,36 +107,29 @@ Table Of Contents end
 
         /* 6. HOME SLIDER JS */
 
-        $('.home-slides').owlCarousel({
-            loop: true,
-            autoplay: false,
-            autoplayTimeout: 4000,
-			animateIn: "fadeInLeft",
-			animateOut: "fadeOutRight",
-            dots: true,
+        $(".home-slides").owlCarousel({
             items: 1,
+            loop: true,
+            autoplay: true,
+            autoplayTimeout: 4000, // 4 seconds
+            autoplayHoverPause: false,
             nav: true,
-            navText: ["<i class='icofont icofont-long-arrow-left'></i> PREV", "NEXT <i class='icofont icofont-long-arrow-right'></i>"],
-			responsiveClass:true,
-			responsive:{
-				0:{
-					items:1,
-					nav:false
-				},
-				600:{
-					items:1,
-					nav:false
-				},
-				768:{
-					items:1,
-					nav:true
-				},
-				1000:{
-					items:1,
-					nav:true
-				}
-			}
-        });
+            dots: true,
+            animateOut: 'fadeOut',
+            animateIn: 'fadeIn',
+            responsive: {
+              0: {
+                items: 1
+              },
+              600: {
+                items: 1
+              },
+              1000: {
+                items: 1
+              }
+            }
+          });
+      
 		
 		$(".home-slides").on("translate.owl.carousel", function () {
 			$(this).find(".owl-item .home-single-slide-dec > *").removeClass("fadeInUp animated").css("opacity","0");
@@ -261,39 +193,35 @@ Table Of Contents end
         /* 9. PORTFOLIO SLIDER JS */
 
         $('.portfolio-slider').owlCarousel({
+            items: 1,
             loop: true,
-            autoplay: false,
-            autoplayTimeout: 4000,
-			navSpeed: 700,
-			dotsSpeed: 700,
-			dragEndSpeed: 1000,
-            dots: false,
+            margin: 10,
             nav: true,
-            navText: ["<i class='icofont icofont-thin-left'></i>", "<i class='icofont icofont-thin-right'></i>"],
-			responsiveClass:true,
-			responsive:{
-				0:{
-					items:1
-				},
-				600:{
-					items:1
-				},
-				768:{
-					items:2
-				},
-				1000:{
-					items:3
-				}
-			}
-        });
-		
+            dots: true,
+            autoplay: true,
+            autoplayTimeout: 2000,
+            autoplayHoverPause: true,
+            animateOut: 'fadeOut',
+            animateIn: 'fadeIn',
+            responsive: {
+              0: {
+                items: 1
+              },
+              600: {
+                items: 2
+              },
+              1000: {
+                items: 3
+              }
+            }
+          });
 		
         /* 10. SERVICE SLIDER JS */
 
         $('.service-slider').owlCarousel({
             loop: true,
             margin: 30,
-            autoplay: false,
+            autoplay: true,
             autoplayTimeout: 4000,
 			navSpeed: 700,
 			dotsSpeed: 700,
