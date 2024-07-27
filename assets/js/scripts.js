@@ -241,31 +241,52 @@
 
         /* 11. TEAM SLIDER JS */
 
-        $('.team-slider').owlCarousel({
+        // $('.team-slider').owlCarousel({
+        //     loop: true,
+        //     margin: 30,
+        //     autoplay: false,
+        //     autoplayTimeout: 4000,
+		// 	navSpeed: 700,
+		// 	dotsSpeed: 700,
+		// 	dragEndSpeed: 1000,
+        //     dots: true,
+		// 	responsiveClass:true,
+		// 	responsive:{
+		// 		0:{
+		// 			items:1
+		// 		},
+		// 		600:{
+		// 			items:1
+		// 		},
+		// 		768:{
+		// 			items:2
+		// 		},
+		// 		1000:{
+		// 			items:4
+		// 		}
+		// 	}
+        // });
+
+        $(".team-slider").owlCarousel({
+            items: 4,
+            margin: 20,
             loop: true,
-            margin: 30,
-            autoplay: false,
-            autoplayTimeout: 4000,
-			navSpeed: 700,
-			dotsSpeed: 700,
-			dragEndSpeed: 1000,
-            dots: true,
-			responsiveClass:true,
-			responsive:{
-				0:{
-					items:1
-				},
-				600:{
-					items:1
-				},
-				768:{
-					items:2
-				},
-				1000:{
-					items:4
-				}
-			}
-        });
+            nav: true,
+            dots: false,
+            autoplay: true,
+            autoplayHoverPause: true,
+            responsive: {
+              0: {
+                items: 1
+              },
+              600: {
+                items: 3
+              },
+              1000: {
+                items: 4
+              }
+            }
+          });
 			
 		   
 	  /* 12. CLIENT SLIDER JS */
