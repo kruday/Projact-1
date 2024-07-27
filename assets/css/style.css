@@ -1282,14 +1282,17 @@ transform-origin: 50%;
   .single-service {
 	text-align: center;
 	padding: 20px;
+	margin: 2px;
 	transition: transform 0.3s ease-in-out;
-	box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+	
+	/* box-shadow: #e22124; */
 	border-radius: 10px;
 	margin-bottom: 30px;
   }
   .single-service:hover {
 	transform: translateY(-10px);
 	box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+	box-shadow: 0 4px 4px rgba(248, 2, 2, 0.847);
   }
   .single-service img {
 	max-width: 100%;
