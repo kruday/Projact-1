@@ -383,12 +383,19 @@ fieldset {
 */
 
 /* top area */
+
+#navbarNav
+{
+	margin-left: 350px;
+	font-weight: bold;
+}
 .navbar-custom {
-	background-color: #dadada; /* Change background color as needed */
+	background-color:white; /* Change background color as needed */
   }
 
+
   .navbar-custom .navbar-brand img {
-	height: 50px; /* Adjust logo size */
+	height: 14vh; /* Adjust logo size */
   }
 
   .navbar-custom .nav-link {
