@@ -775,7 +775,57 @@ transform-origin: 50%;
 * ----------------------------------------------------------------------------------------
 */
 
+/* image section  */
 
+.client-section {
+    padding: 50px 0;
+}
+
+.client-slider .single-client {
+    position: relative;
+    overflow: hidden;
+	border-radius: 10px;
+	outline: none;
+}
+
+.client-slider .client-img {
+    width: 100%;
+    height: 100%;
+	outline: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+         /* Added border radius */ 
+	
+}
+
+.client-slider .single-client:hover .client-img {
+    transform: scale(1.1);
+}
+
+
+/* For equal size images */
+.client-slider .single-client {
+    display: flex;
+    align-items: center;
+	flex-wrap: wrap;
+    justify-content: center;
+    height: 200px;
+	width: 200px;
+	 /* Adjust as needed */
+}
+
+.client-slider .single-client img {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+    /* border-radius: 15px; Ensure border radius is consistent */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .client-slider .single-client {
+        height: 150px; /* Adjust as needed */
+    }
+}
 
 
 /*
@@ -1045,6 +1095,60 @@ transform-origin: 50%;
 * ----------------------------------------------------------------------------------------
 */
 
+/* Importing fonts from Google */
+
+.typing::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: #e22124;
+    animation: cursorBlink 0.8s steps(3) infinite;
+}
+
+@keyframes cursorBlink {
+    0%, 75% {
+        opacity: 1;
+    }
+    76%, 100% {
+        opacity: 0;
+    }
+}
+
+.typing {
+    position: relative;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, #3333);
+    white-space: nowrap; /* Prevent text from wrapping */
+}
+
+.typing h2 {
+    position: relative;
+    color: #e22124;
+    letter-spacing: 2px;
+    font-size: 1.5rem;
+    overflow: hidden;
+    margin-bottom: 0;
+    display: inline-block;
+    animation: type 5s steps(30, end) infinite; /* Adjust steps to a higher value */
+}
+
+@keyframes type {
+    0%, 100% {
+        width: 0%;
+    }
+    50% {
+        width: 100%;
+    }
+}
+
+@media(max-width: 330px) {
+    .typing h2 {
+        font-size: 1.5rem;
+        animation: type 5s steps(30, end) infinite; /* Adjust steps to a higher value */
+    }
+}
 .section-padding {
 	padding: 60px 0;
   }
@@ -1059,7 +1163,6 @@ transform-origin: 50%;
 	display: inline-block;
 	white-space: nowrap;
 	overflow: hidden;
-	border-right: 3px solid;
 	animation: typing 4s steps(40, end), blink-caret .75s step-end infinite;
 	color: #035fa8;
   }
