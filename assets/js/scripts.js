@@ -239,33 +239,11 @@
           });
 				
 
-        /* 11. TEAM SLIDER JS */
+        /* social media icon  */
 
-        // $('.team-slider').owlCarousel({
-        //     loop: true,
-        //     margin: 30,
-        //     autoplay: false,
-        //     autoplayTimeout: 4000,
-		// 	navSpeed: 700,
-		// 	dotsSpeed: 700,
-		// 	dragEndSpeed: 1000,
-        //     dots: true,
-		// 	responsiveClass:true,
-		// 	responsive:{
-		// 		0:{
-		// 			items:1
-		// 		},
-		// 		600:{
-		// 			items:1
-		// 		},
-		// 		768:{
-		// 			items:2
-		// 		},
-		// 		1000:{
-		// 			items:4
-		// 		}
-		// 	}
-        // });
+      
+
+
 
         $(".team-slider").owlCarousel({
             items: 4,
