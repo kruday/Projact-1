@@ -269,15 +269,24 @@
 		   
 	  /* 12. CLIENT SLIDER JS */
 
-		$('.client-slider').owlCarousel({
-            loop: true,
-            margin: 30,
-            autoplay: true,
-            autoplayTimeout: 3500,
-            items: 5,
-            dots: false,
-            nav: false
-        });
+    $('.client-slider').owlCarousel({
+      loop: true,
+      margin: 10,
+      nav: true,
+      autoplay: true,
+      autoplayTimeout: 3000,
+      responsive: {
+        0: {
+          items: 1
+        },
+        600: {
+          items: 3
+        },
+        1000: {
+          items: 4
+        }
+      }
+    });
 
 		   
 	  /* 13. WN SLIDER JS */

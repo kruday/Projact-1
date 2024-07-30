@@ -15,7 +15,7 @@ body {
 }
 html,
 body {
-    height: 100%;
+   width:100%;
 }
 h1,
 h2,
@@ -383,50 +383,76 @@ fieldset {
 */
 
 /* top area */
-
-#navbarNav
-{
-	margin-left: 350px;
-	font-weight: bold;
+ 
+#navbar {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center;
 }
+
 .navbar-custom {
-	background-color:white; /* Change background color as needed */
-  }
+    width: 100% !important;
+	background-color: #fff;
+}
 
+.navbar-custom .navbar-brand img {
+    width: 300px; /* Make the image responsive */
+    max-width: 350px; /* Maximum width for larger screens */
+}
 
-  .navbar-custom .navbar-brand img {
-	height: 14vh; /* Adjust logo size */
-  }
+.navbar-custom .nav-link {
+    color: #e22124; /* Red text color */
+	font-size: 20px;
+	font-weight: 400;
+    transition: color 0.3s ease;
+}
 
-  .navbar-custom .nav-link {
-	color: #e22124; /* Red text color */
-	transition: color 0.3s ease;
-  }
+.navbar-custom .nav-link:hover {
+    color: #035fa8; /* Hover color */
+}
 
-  .navbar-custom .nav-link:hover {
-	color: #035fa8; /* Hover color */
-  }
+.navbar-custom .navbar-toggler {
+    border: none;
+    color: #e22124; /* Toggle icon color */
+}
 
-  .navbar-custom .navbar-toggler {
-	border: none;
-	color: #e22124; /* Toggle icon color */
-  }
+.navbar-custom .navbar-toggler:hover {
+    color: #035fa8; /* Hover color for toggle icon */
+}
 
-  .navbar-custom .navbar-toggler:hover {
-	color: #035fa8; /* Hover color for toggle icon */
-  }
+.navbar-custom .navbar-toggler:focus {
+    outline: none;
+}
 
-  .navbar-custom .navbar-toggler:focus {
-	outline: none;
-  }
+.navbar-custom .navbar-toggler-icon {
+    background-image: url('data:image/svg+xml;charset=utf8,%3Csvg viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath stroke="rgba%28226,33,36, 1%29" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"/%3E%3C/svg%3E');
+}
 
-  .navbar-custom .navbar-toggler-icon {
-	background-image: url('data:image/svg+xml;charset=utf8,%3Csvg viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath stroke="rgba%28226,33,36, 1%29" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"/%3E%3C/svg%3E');
-  }
+.navbar-custom .navbar-toggler-icon:hover {
+    background-image: url('data:image/svg+xml;charset=utf8,%3Csvg viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath stroke="rgba%2803,95,168, 1%29" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"/%3E%3C/svg%3E');
+}
+#navbarNav{
+	display: flex;
+	justify-content: flex-end;
+}
 
-  .navbar-custom .navbar-toggler-icon:hover {
-	background-image: url('data:image/svg+xml;charset=utf8,%3Csvg viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath stroke="rgba%2803,95,168, 1%29" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"/%3E%3C/svg%3E');
-  }
+/* Responsive styles */
+@media (max-width: 991.98px) {
+    .navbar-custom .navbar-brand img {
+        max-width: 200px; /* Adjust max width for tablets */
+    }
+}
+
+@media (max-width: 767.98px) {
+    .navbar-custom .navbar-brand img {
+        max-width: 150px; /* Adjust max width for mobile devices */
+    }
+
+    #navbarNav {
+        background-color: #fff; /* Optional: Add background color for mobile menu */
+    }
+}
+
 /*
 * ----------------------------------------------------------------------------------------
 * 02. END HEADER STYLE
@@ -436,57 +462,29 @@ fieldset {
 /* image section  */
 
 .client-section {
-    padding: 50px 0;
-}
+	padding: 60px 0;
+  }
 
-.client-slider .single-client {
-    position: relative;
-    overflow: hidden;
+  .single-client {
+	transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+
+  .single-client:hover {
+	transform: scale(1.05);
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  .client-img {
 	border-radius: 10px;
-	outline: none;
-}
+	width: 100%;
+	height: auto;
+  }
 
-.client-slider .client-img {
-    width: 100%;
-    height: 100%;
-	outline: none;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-         /* Added border radius */ 
-	
-}
-
-.client-slider .single-client:hover .client-img {
-    transform: scale(1.1);
-}
-
-
-/* For equal size images */
-.client-slider .single-client {
-    display: flex;
-    align-items: center;
-	flex-wrap: wrap;
-    justify-content: center;
-    height: 200px;
-	width: 200px;
-	 /* Adjust as needed */
-}
-.header-img{
-	width: 25vw;
-	/* height: 17vh; */
-}
-.client-slider .single-client img {
-    height: 217px;
-    width: 100%;
-    object-fit: cover;
-    /* border-radius: 15px; Ensure border radius is consistent */
-}
-
-/* Responsive adjustments */
-@media (max-width: 768px) {
-    .client-slider .single-client {
-        height: 150px; /* Adjust as needed */
-    }
-}
+  .owl-carousel .owl-item {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  }
 
 
 /*
@@ -4539,7 +4537,10 @@ td.img-row {
 */
 
 
-
+.container{
+	max-width: 1300px;
+	margin: 0 auto;
+}
 /* container width small device */
 @media only screen and (max-width: 480px) {
 .container,.auto-container,.home-single-slide {
